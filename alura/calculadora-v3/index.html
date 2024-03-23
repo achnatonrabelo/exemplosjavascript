@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caluladora HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/icons8-calculator-48.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <section>
+        <div class="display">
+            <input type="text" readonly>
+        </div>
+        <div class="teclado">
+            <input class="botaoNumerico" id="teclaSete" onclick="showScreenContent(0)" type="button" value="7">
+            <input class="botaoNumerico" id="teclaOito" onclick="showScreenContent(1)" type="button" value="8">
+            <input class="botaoNumerico" id="teclaNove" onclick="showScreenContent(2)" type="button" value="9">
+            <input class="botaoOperacao" id="Adicao" onclick="adicao()" type="button" value="&#43;">
+            <input class="botaoNumerico" id="teclaQuatro" onclick="showScreenContent(4)" type="button" value="4">
+            <input class="botaoNumerico" id="teclaCinco" onclick="showScreenContent(5)" type="button" value="5">
+            <input class="botaoNumerico" id="teclaSeis" onclick="showScreenContent(6)" type="button" value="6">
+            <input class="botaoOperacao" id="teclaSubtracao" onclick="" type="button" value="&#8722;">
+            <input class="botaoNumerico" id="teclaUm" onclick="showScreenContent(8)" type="button" value="1">
+            <input class="botaoNumerico" id="teclaDois" onclick="showScreenContent(9)" type="button" value="2">
+            <input class="botaoNumerico" id="teclaTres" onclick="showScreenContent(10)" type="button" value="3">
+            <input class="botaoOperacao" id="Multiplicacao" onclick="" type="button" value="x">
+            <input class="botaoAuxiliar" id="teclaCE" onclick="clearScreen()" type="button" value="CE">
+            <input class="botaoNumerico" id="teclaZero" onclick="showScreenContent(0)" type="button" value="0">
+            <input class="" id="Backspace" onclick="backspace()" type="button" value="&#8678;">
+            <input class="botaoOperacao" id="Divisao" onclick="" type="button" value="&#xF7;">
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

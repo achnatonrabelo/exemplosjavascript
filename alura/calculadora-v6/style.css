@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #191919;
+    font-family: Sans-serif;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #fff;
+}
+
+input {
+    border: none;
+    font-size: 1.5em;
+    font-weight: inherit;
+    font-family: inherit;
+}
+
+.display {
+    display: grid;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 0.63fr);
+    gap: 5px;
+    background-color: #cccccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input[type=text] {
+    background-color: #cccccc;
+    border-radius: 10px;
+    height: 40px;
+    padding: 25px;
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.tecla {
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.operador {
+    border: 3px solid #191919;
+    border-radius: 10px;
+    width: 70px;
+    height: 80px;
+    background-color:darkgray;
+}
+
+.execucao {
+    border: 3px solid #191919;
+    border-radius: 10px;
+    width: 70px;
+    height: 80px;
+    background-color:lightseagreen;
+}

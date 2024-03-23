@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #191919;
+    min-height: 100vh;
+  }
+  
+  input {
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+  }
+  
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .display {
+    display: grid;
+  }
+  
+  .teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 0.63fr);
+    gap: 5px; 
+    background-color: #cccccc;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+  }
+  
+  .botaoNumerico, .botaoAuxiliar {
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 70px;
+    width: 80px;
+  }
+  
+  .botaoAuxiliar {
+    background-color: darkgray;
+  }
+
+  .botaoOperacao {
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    height: 70px;
+    width: 50px;
+    background-color: darkgray;
+  }
+  
+  input[type=text] {
+    background-color: darkgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: monospace;
+    font-size: 22px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: right;
+  }
+  

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <section>
+        <div class="display">
+            <input id="tela" type="text" readonly>
+        </div>
+        <div class="teclado">
+            <input class="tecla operador" id="percent" type="button" value="%">
+            <input class="tecla auxiliar" onclick="clearAll()" id="clear" type="button" value="C">
+            <input class="tecla auxiliar" onclick="clearCharacter()" id="backspace" type="button" value="&#8678;">
+            <input class="tecla operador" id="divisao" type="button" value="/"> <!-- &#XF7; -->
+            <input class="tecla numero" id="sete" type="button" value="7">
+            <input class="tecla numero" id="oito" type="button" value="8">
+            <input class="tecla numero" id="nove" type="button" value="9">
+            <input class="tecla operador" id="multiplicacao" type="button" value="x">
+            <input class="tecla numero" id="quatro" type="button" value="4">
+            <input class="tecla numero" id="cinco" type="button" value="5">
+            <input class="tecla numero" id="seis" type="button" value="6">
+            <input class="tecla operador" id="subtracao" type="button" value="-">
+            <input class="tecla numero" id="um" type="button" value="1">
+            <input class="tecla numero" id="dois" type="button" value="2">
+            <input class="tecla numero" id="tres" type="button" value="3">
+            <input class="tecla operador" id="adicao" type="button" value="+">
+            <input class="tecla auxiliar" type="button" value="ND">
+            <input class="tecla numero" id="zero" type="button" value="0">
+            <input class="tecla auxiliar" id="decimal" type="button" value=",">
+            <input class="tecla execucao" onclick="mostraResultado()" type="button" value="=">
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
